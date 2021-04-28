@@ -5,6 +5,7 @@ import Footer from "./Footer";
 const Projects = () => {
   return (
     <Wrapper>
+      <Decoration src="../.././decoration2.PNG" alt="decoration" />
       <Title>Projects</Title>
       <Item1>
         <Logo>
@@ -15,10 +16,10 @@ const Projects = () => {
         <Text>
           <span>Lara's Game</span>
           <br />
-          This is an OOP Shoot 'em up game. It is themed after{" "}
+          This is an OOP game similar to space invaders. It is themed after{" "}
           <Anchor href="https://www.youtube.com/watch?v=TUVcZfQe-Kw">
             Dua Lipa's Levitating
-          </Anchor>
+          </Anchor>{" "}
           music video. <br />
           It was created to be submitted as my 1st project for my bootcamp.{" "}
           <br />
@@ -42,36 +43,39 @@ const Projects = () => {
           </Anchor>
         </Logo>
       </Item2>
-      <Footer />
+      <Footer hoverColor={"#4e65d9"} />
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  padding: 0% 3%;
+  width: 100%;
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  position: relative;
+`;
+
+const Decoration = styled.img`
+  position: absolute;
+  top: 0%;
+  right: 5%;
 `;
 
 const Title = styled.h1`
-  font-weight: bold;
-  margin-top: 40px;
-  color: rgb(252, 186, 3);
+  font-size: 80px;
+  color: #4e65d9;
 `;
 
 const Item1 = styled.div`
   display: flex;
-  border-radius: 15px;
-  background: linear-gradient(90deg, rgb(32, 28, 28) 80%, rgb(43, 38, 38));
-  padding: 15px;
-  margin: 20px 0px;
+  padding-top: 5%;
 `;
 
 const Item2 = styled.div`
   display: flex;
   justify-content: space-between;
-  border-radius: 15px;
-  background: linear-gradient(90deg, rgb(43, 38, 38), rgb(32, 28, 28) 20%);
-  padding: 15px;
-  margin: 20px 0px;
+  padding-top: 5%;
 `;
 
 const Logo = styled.div`
@@ -87,18 +91,16 @@ const Img = styled.img`
 `;
 
 const Text = styled.div`
-  line-height: 2;
+  line-height: 1.5;
   margin: 0px 45px;
-  font-family: "Roboto";
   & span {
     font-weight: bold;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
   }
 `;
 
 const Anchor = styled.a`
-  color: white;
-  font-family: "Roboto";
+  color: inherit;
   &:hover {
     transform: scale(1.1);
   }

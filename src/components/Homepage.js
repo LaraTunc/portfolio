@@ -1,92 +1,39 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
-import Footer from "./Footer";
+import styled from "styled-components";
+import Footer2 from "./Footer2";
 
 const Homepage = () => {
   return (
     <Wrapper>
-      <Section1>
-        <Wrapper2>
-          <Img src="../.././Lara_Tunc_5233.jpg" alt="portrait" />
-        </Wrapper2>
-        <Wrapper3>
-          <h1>
-            <span>Hello!</span> <br /> My name is Lara Tunc. I am a web
-            developer. <br /> I love learning new things, coffee and fantasy
-            books. <br /> For more please scrool down 🦑
-          </h1>
-        </Wrapper3>
-      </Section1>
-      <Section2>
-        <StyledLink to="/about">About</StyledLink>
-        <StyledLink to="/projects">Projects</StyledLink>
-        <StyledLink to="/contact-me">Contact</StyledLink>
-      </Section2>
-      <Footer />
+      <Name>Lara Tunc</Name>
+      <Title>Full Stack Web Developer</Title>
+      <Div>
+        <Footer2 />
+      </Div>
     </Wrapper>
   );
 };
 
-const fadeIn = keyframes`
-  0% {opacity:0;}
-  100% {opacity:1;}
-`;
-
 const Wrapper = styled.div`
-  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  animation: ${fadeIn} linear 3s;
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
 `;
 
-const Section1 = styled.div`
-  display: flex;
-  padding: 5%;
+const Name = styled.h1`
+  font-size: 130px;
 `;
 
-const Img = styled.img`
-  display: block;
-  max-height: 500px;
+const Title = styled.p`
+  font-size: 30px;
 `;
 
-const Wrapper2 = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Wrapper3 = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  & span {
-    color: rgb(252, 186, 3);
-  }
-`;
-
-const Section2 = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 15%;
-`;
-
-const StyledLink = styled(NavLink)`
-  flex: 1;
-  text-align: center;
-  font-size: 50px;
-  text-decoration: none;
-  color: white;
-  &:hover {
-    color: rgb(252, 186, 3);
-    transform: scale(1.3);
-  }
-  &:visited {
-    text-decoration: none;
-  }
+const Div = styled.div`
+  height: 100%;
 `;
 
 export default Homepage;

@@ -6,13 +6,13 @@ export default createGlobalStyle`
   *:after {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Alegreya Sans SC','Roboto', sans-serif;
+    font-family: 'Inter','Alegreya Sans SC','Roboto', sans-serif;
 }
 
 html, body {
     max-width: 100vw;
-    background: rgb(32, 28, 28);
-    color:white;
+    background: #EAEDFB;
+    color:black;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -60,24 +60,5 @@ body, input, button, textarea {
     line-height: 1.25;
     font-size:24px;
 }
-
-h1 {
-    font-size: 36px;
-};
-h2 {
-    font-size: 34px;
-};
-h3 {
-    font-size: 32px;
-};
-h4 {
-    font-size: 30px;
-};
-h5{
-    font-size: 28px;
-};
-h6 {
-    font-size: 26px;
-};
 
 `;
