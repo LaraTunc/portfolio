@@ -7,7 +7,8 @@ import Languages from "./Languages";
 const About = () => {
   return (
     <Wrapper>
-      <Img src="../.././decoration.PNG" alt="decoration" />
+      <Img src="../.././Lara_Tunc.jpg" alt="headshot" />
+      <Img2 src="../.././decoration.PNG" alt="decoration" />
       <Title>About Me</Title>
       <Description>
         Full stack web developer, React lover, curious person <br />
@@ -35,8 +36,15 @@ const Wrapper = styled.div`
 
 const Img = styled.img`
   position: absolute;
+  height: 25%;
   top: 2%;
-  right: 0%;
+  right: 2%;
+`;
+
+const Img2 = styled.img`
+  position: absolute;
+  top: 0%;
+  right: 30%;
 `;
 
 const Title = styled.h1`
@@ -47,6 +55,7 @@ const Title = styled.h1`
 const Description = styled.p`
   padding-top: 60px;
   font-size: 24px;
+  width: 75%;
 `;
 
 export default About;

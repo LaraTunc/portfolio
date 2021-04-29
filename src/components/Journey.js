@@ -61,7 +61,7 @@ const Journey = () => {
 
 const Title2 = styled.h3`
   font-size: 30px;
-  padding-top: 5%;
+  padding-top: 80px;
 `;
 
 const Wrapper = styled.div`

@@ -6,7 +6,7 @@ const Footer2 = () => {
   return (
     <Wrapper>
       <Div2>
-        <Img src="../.././capture3.PNG" alt="developer woman" />
+        <Img src="../.././Image.png" alt="developer woman" />
       </Div2>
       <Div3>
         <StyledLink to="/about">About</StyledLink>
@@ -24,8 +24,8 @@ const Wrapper = styled.div`
 
 const Img = styled.img`
   position: absolute;
-  height: 400px;
-  bottom: 0%;
+  height: 120%;
+  bottom: 55px;
   right: 0%;
 `;
 

@@ -58,7 +58,7 @@ const Languages = () => {
 
 const Title2 = styled.h3`
   font-size: 30px;
-  padding-top: 60px;
+  padding-top: 150px;
 `;
 
 const LanguagesWrapper = styled.div`
