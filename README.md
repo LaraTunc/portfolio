@@ -1,4 +1,4 @@
-<img src="./public/screenshot.PNG">
+<img src="./public/img/screenshot.PNG">
 
 This is my personal portfolio 😊 
 

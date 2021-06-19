@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 
 const Footer = ({ linkColor, hoverColor }) => {
   return (
@@ -8,25 +8,25 @@ const Footer = ({ linkColor, hoverColor }) => {
       <Div linkColor={linkColor} />
       <Div2>
         <Div3>
-          <StyledLink to="/about" linkColor={linkColor} hoverColor={hoverColor}>
+          <StyledLink to='/about' linkColor={linkColor} hoverColor={hoverColor}>
             About
           </StyledLink>
           <StyledLink
-            to="/projects"
+            to='/projects'
             linkColor={linkColor}
             hoverColor={hoverColor}
           >
             Projects
           </StyledLink>
           <StyledLink
-            to="/contact-me"
+            to='/contact-me'
             linkColor={linkColor}
             hoverColor={hoverColor}
           >
             Contact
           </StyledLink>
         </Div3>
-        <StyledLink2 to="/" linkColor={linkColor} hoverColor={hoverColor}>
+        <StyledLink2 to='/' linkColor={linkColor} hoverColor={hoverColor}>
           Home
         </StyledLink2>
       </Div2>
@@ -63,7 +63,7 @@ const StyledLink = styled(NavLink)`
   padding-right: 35px;
   padding-bottom: 10px;
   text-decoration: none;
-  color: ${({ linkColor }) => (linkColor ? linkColor : "black")};
+  color: ${({ linkColor }) => (linkColor ? linkColor : 'black')};
   &:hover {
     color: ${({ hoverColor }) => hoverColor};
   }
@@ -77,7 +77,7 @@ const StyledLink2 = styled(NavLink)`
   padding-top: 10px;
   padding-bottom: 10px;
   text-decoration: none;
-  color: ${({ linkColor }) => (linkColor ? linkColor : "black")};
+  color: ${({ linkColor }) => (linkColor ? linkColor : 'black')};
   &:hover {
     color: ${({ hoverColor }) => hoverColor};
   }

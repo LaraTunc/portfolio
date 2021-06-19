@@ -1,17 +1,17 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import styled, { keyframes } from 'styled-components';
 
 const Footer2 = () => {
   return (
     <Wrapper>
       <Div2>
-        <Img src="../.././Image.png" alt="developer woman" />
+        <Img src='../.././img/Image.png' alt='developer woman' />
       </Div2>
       <Div3>
-        <StyledLink to="/about">About</StyledLink>
-        <StyledLink to="/projects">Projects</StyledLink>
-        <StyledLink to="/contact-me">Contact</StyledLink>
+        <StyledLink to='/about'>About</StyledLink>
+        <StyledLink to='/projects'>Projects</StyledLink>
+        <StyledLink to='/contact-me'>Contact</StyledLink>
       </Div3>
     </Wrapper>
   );

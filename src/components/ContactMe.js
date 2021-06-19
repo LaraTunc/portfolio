@@ -1,10 +1,10 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
-import Footer from "./Footer";
-import { AiOutlineMail } from "react-icons/ai";
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { AiFillGithub } from "react-icons/ai";
-import { BsArrowUpRight } from "react-icons/bs";
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
+import Footer from './Footer';
+import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
+import { BsArrowUpRight } from 'react-icons/bs';
 
 const ContactMe = () => {
   return (
@@ -13,33 +13,33 @@ const ContactMe = () => {
         <Title>Contact Me</Title>
         <Wrapper3>
           <Item>
-            <AiOutlineMail size={50} color={"white"} />
+            <AiOutlineMail size={50} color={'white'} />
             <Div>
-              <Anchor href="mailto:laratunc@gmail.com">
+              <Anchor href='mailto:laratunc@gmail.com'>
                 Email <BsArrowUpRight size={30} />
               </Anchor>
             </Div>
           </Item>
           <Item>
-            <AiOutlineLinkedin size={50} color={"white"} />
+            <AiOutlineLinkedin size={50} color={'white'} />
             <Div>
-              <Anchor href="https://www.linkedin.com/in/laratunc/">
+              <Anchor href='https://www.linkedin.com/in/laratunc/'>
                 LinkedIn <BsArrowUpRight size={30} />
               </Anchor>
             </Div>
           </Item>
           <Item>
-            <AiFillGithub size={50} color={"white"} />
+            <AiFillGithub size={50} color={'white'} />
             <Div>
-              <Anchor href="https://github.com/LaraTunc">
-                {" "}
+              <Anchor href='https://github.com/LaraTunc'>
+                {' '}
                 Github <BsArrowUpRight size={30} />
               </Anchor>
             </Div>
           </Item>
         </Wrapper3>
       </Wrapper2>
-      <Footer linkColor={"white"} hoverColor={"black"} />
+      <Footer linkColor={'white'} hoverColor={'#30d5c8'} />
     </Wrapper>
   );
 };
@@ -82,7 +82,7 @@ const Item = styled.div`
 
 const Div = styled.div`
   & :hover {
-    transform: translateX(5px);
+    color: #30d5c8;
   }
 `;
 

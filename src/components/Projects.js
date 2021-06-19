@@ -1,27 +1,27 @@
-import React from "react";
-import styled from "styled-components";
-import Footer from "./Footer";
+import React from 'react';
+import styled from 'styled-components';
+import Footer from './Footer';
 
 const Projects = () => {
   return (
     <Wrapper>
-      <Decoration src="../.././decoration2.PNG" alt="decoration" />
+      <Decoration src='../.././img/decoration2.PNG' alt='decoration' />
       <Title>Projects</Title>
       <Item1>
         <Logo>
-          <Anchor href="https://larasgame.netlify.app/">
-            <Img src="../.././game.png" alt="game langing page" />
+          <Anchor href='https://larasgame.netlify.app/'>
+            <Img src='../.././img/game.png' alt='game langing page' />
           </Anchor>
         </Logo>
         <Text>
           <span>Lara's Game</span>
           <br />
-          This is an OOP game similar to space invaders. It is themed after{" "}
-          <Anchor href="https://www.youtube.com/watch?v=TUVcZfQe-Kw">
+          This is an OOP game similar to space invaders. It is themed after{' '}
+          <Anchor href='https://www.youtube.com/watch?v=TUVcZfQe-Kw'>
             Dua Lipa's Levitating
-          </Anchor>{" "}
+          </Anchor>{' '}
           music video. <br />
-          It was created to be submitted as my 1st project for my bootcamp.{" "}
+          It was created to be submitted as my 1st project for my bootcamp.{' '}
           <br />
           Deployment date: 29 Oct 2020.
         </Text>
@@ -35,15 +35,17 @@ const Projects = () => {
           The app allows the user to send e-cards via email to selected
           recipients.
           <br />
+          <b>React.js, Node.js, Express, Nodemailer, MongoDB</b>
+          <br />
           Deployment date: 20 Apr 2021.
         </Text>
         <Logo>
-          <Anchor href="https://larascards.netlify.app/">
-            <Img src="../.././cards.png" alt="cards landing page" />
+          <Anchor href='https://larascards.netlify.app/'>
+            <Img src='../.././img/cards.png' alt='cards landing page' />
           </Anchor>
         </Logo>
       </Item2>
-      <Footer hoverColor={"#4e65d9"} />
+      <Footer hoverColor={'#4e65d9'} />
     </Wrapper>
   );
 };
@@ -69,13 +71,13 @@ const Title = styled.h1`
 
 const Item1 = styled.div`
   display: flex;
-  padding-top: 5%;
+  padding-top: 12%;
 `;
 
 const Item2 = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-top: 5%;
+  padding-top: 12%;
 `;
 
 const Logo = styled.div`
@@ -102,7 +104,7 @@ const Text = styled.div`
 const Anchor = styled.a`
   color: inherit;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 `;
 

@@ -1,25 +1,25 @@
-import React from "react";
-import styled from "styled-components";
-import Footer3 from "./Footer";
-import Journey from "./Journey";
-import Languages from "./Languages";
+import React from 'react';
+import styled from 'styled-components';
+import Footer3 from './Footer';
+import Journey from './Journey';
+import Languages from './Languages';
 
 const About = () => {
   return (
     <Wrapper>
-      <Img src="../.././Lara_Tunc.jpg" alt="headshot" />
-      <Img2 src="../.././decoration.PNG" alt="decoration" />
+      <Img src='../.././Lara_Tunc.jpg' alt='headshot' />
+      <Img2 src='../.././img/decoration.PNG' alt='decoration' />
       <Title>About Me</Title>
       <Description>
-        Full stack web developer, React lover, curious person <br />
-        Special interests: scalability across large applications, abstraction,
-        blockchain
+        I am a full stack developer who is passionate about finding solutions to
+        real life problems with web technologies. I love learning new things and
+        employing my skills to help people 👩‍💻
         <br />
-        Currently learning: PHP, SQL
+        Currently working on: chrome extensions
       </Description>
       <Languages />
       <Journey />
-      <Footer3 hoverColor={"#4e65d9"} />
+      <Footer3 hoverColor={'#4e65d9'} />
     </Wrapper>
   );
 };

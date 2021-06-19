@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { FaGraduationCap } from "react-icons/fa";
-import { BsBagFill } from "react-icons/bs";
-import { RiCodeBoxFill } from "react-icons/ri";
-import { AiFillHeart } from "react-icons/ai";
+import React from 'react';
+import styled from 'styled-components';
+import { FaGraduationCap } from 'react-icons/fa';
+import { BsBagFill } from 'react-icons/bs';
+import { RiCodeBoxFill } from 'react-icons/ri';
+import { AiFillHeart } from 'react-icons/ai';
 
 const Journey = () => {
   return (
@@ -71,7 +71,8 @@ const Wrapper = styled.div`
 
 const Quarter = styled.div`
   flex: 1;
-  margin: 0px 10px;
+  font-size: smaller;
+  margin: 0px 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
